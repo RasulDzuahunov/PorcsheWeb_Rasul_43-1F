@@ -1,0 +1,111 @@
+/* Общий стиль */
+main {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #b5b7b9;
+}
+.car-option {
+  text-align: center;
+  cursor: pointer;
+}
+
+.car-option img {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.car-option:hover img {
+  transform: scale(1.1);
+}
+
+.car-image {
+  max-width: 100%;
+  max-height: 100%; 
+  object-fit: contain;
+}
+
+
+.car-option p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* Основной раздел */
+.main-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.car-title h1 {
+  font-size: 36px;
+  margin: 70px 20px 0px;
+}
+
+.car-display img {
+  width: 60%; 
+  height: 500px;
+  margin: 0 auto; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  background-color: #f0f0f0; 
+  overflow: hidden; 
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5)
+}
+
+/* Секция выбора цветов */
+.color-selector {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.color-button {
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.color-button:hover {
+  transform: scale(1.2);
+}
+
+/* Селектор позиций */
+.position-selector {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  right: 100px;
+  top: 55%;
+  transform: translateY(-50%);
+}
+
+.position-selector img {
+  width: 200px; 
+  height: 110px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: transform 0.3s, border-color 0.3s;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.position-selector img:hover {
+  transform: scale(1.1);
+  border-color: #000;
+}
+
+.position-selector img.selected-position {
+  border-color: #000;
+}
+
+

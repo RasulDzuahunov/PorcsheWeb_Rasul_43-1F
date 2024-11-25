@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Porsche Configurator</title>
+  <link rel="stylesheet" href="/css/custom.css">
+  <link rel="stylesheet" href="/css/core.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<main>
+
+  <div class="main-content">
+    <header class="header">
+        <div class="logo">
+           <a href="/html/index.html"> <img src="/image/porscheLogo.png" alt="logo"> </a>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="/html/custom.html">Custom</a></li>
+                <li><a href="/html/models.html">Models</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="btn" id="btn-get">Consult</button>
+        </nav>
+    </header>
+
+  <div class="main-section">
+    <div class="car-title">
+      <h1 id="car-name">Customize Your 911</h1>
+    </div>
+
+    <div class="position-selector">
+      <img src="/customImage/angelfront911_white.webp" alt="Porsche 911 Front Angle" onclick="changeCarPosition('angelfront911')">
+      <img src="/customImage/angelrear911_white.webp" alt="Porsche 911 Rear Angle" onclick="changeCarPosition('angelrear911')">
+      <img src="/customImage/front911_white.webp" alt="Porsche 911 Front" onclick="changeCarPosition('front911')">
+      <img src="/customImage/rear911_white.webp" alt="Porsche 911 Rear" onclick="changeCarPosition('rear911')">
+      <img src="/customImage/side911_white.webp" alt="Porsche 911 Side" onclick="changeCarPosition('side911')">
+    </div>
+
+    <div class="car-display">
+      <img id="car-image" src="/customImage/front911_white.webp" class="car-image" alt="Porsche Car">
+    </div>
+
+    <div class="color-selector">
+      <button class="color-button" style="background-color: red;" onclick="changeCarColor('red')"></button>
+      <button class="color-button" style="background-color: white;" onclick="changeCarColor('white')"></button>
+      <button class="color-button" style="background-color: black;" onclick="changeCarColor('black')"></button>
+      <button class="color-button" style="background-color: blue;" onclick="changeCarColor('blue')"></button>
+    </div>
+  </div>
+
+  <div class="modal" id="modal">
+    <div class="modal_dialog">
+        <div class="modal_content">
+            <div class="modal_close" id="modal-close">&times;</div>
+            <div class="modal_title">We will contact you as soon as possible!</div>
+            <form action="#">
+                <input
+                    required
+                    placeholder="Ваше имя"
+                    name="name"
+                    type="text"
+                    class="modal_input"
+                >
+                <input
+                    required
+                    placeholder="Ваш номер телефона"
+                    name="phone"
+                    type="text"
+                    class="modal_input"
+                >
+                <button type="submit" class="btn btn_dark btn_min">Confirm</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+  <script src="/js/custom.js"></script>
+  <script src="/js/modal.js"></script>
+</main>
+</html>
